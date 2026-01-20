@@ -1,0 +1,178 @@
+{% extends "base.njk" %}
+
+{% block title %}MLMI 17: Advanced Computer Vision{% endblock %}
+
+{% block content %}
+<style>
+    /* Natural Table Typography */
+    .syllabus-table {
+        width: 100%;
+        border-collapse: collapse; [cite: 5]
+        margin: 2rem 0;
+        font-size: 0.95rem; /* Slightly smaller for density but readable */
+    }
+
+    .syllabus-table th {
+        text-align: left;
+        padding: 12px 15px; [cite: 6]
+        font-weight: 600;
+        color: #fff;
+        border-bottom: 2px solid #444; [cite: 8]
+    }
+
+    .light-mode .syllabus-table th { color: #000; border-bottom: 2px solid #ccc; }
+
+    .syllabus-table td {
+        padding: 15px;
+        border-bottom: 1px solid #333; [cite: 6]
+        vertical-align: top;
+    }
+
+    .light-mode .syllabus-table td { border-bottom: 1px solid #eee; }
+
+    /* Part Dividers: Natural and Subtle */
+    .section-header td {
+        background-color: rgba(255, 255, 255, 0.03);
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: #aaa;
+        padding: 10px 15px; [cite: 10]
+        border-bottom: 1px solid #444;
+    }
+
+    .light-mode .section-header td {
+        background-color: rgba(0, 0, 0, 0.03);
+        color: #666;
+    }
+
+    /* Links & Monospace */
+    .slide-link { font-family: monospace; font-size: 0.8rem; opacity: 0.6; } [cite: 11]
+    section { margin-bottom: 4rem; }
+    p { line-height: 1.6; }
+</style>
+
+<article>
+    <h1>MLMI 17: Advanced Computer Vision</h1>
+    
+    <section>
+        <p>
+            <strong>Term:</strong> Lent 2026<br>
+            <strong>Time:</strong> Thursdays, 12-1pm<br>
+            <strong>Format:</strong> In-person Lectures
+        </p>
+    </section>
+
+    <section id="group">
+        <h2>Module Leaders</h2>
+        <div class="group-container">
+            <div class="student-entry"> 
+                <img class="student-photo" src="{{ '/assets/elliott.jpg' | url }}" alt="Elliott Wu"/>
+                <div class="pub-details">
+                    <p style="margin: 0;">
+                        <b><a href="https://elliottwu.com/" target="_blank">Elliott Wu</a></b><br/>
+                        <span style="opacity: 0.7; font-size: 0.9rem;">Assistant Professor</span>
+                    </p>
+                </div>
+            </div>
+            <div class="student-entry"> 
+                <img class="student-photo" src="{{ '/assets/ayush.jpg' | url }}" alt="Ayush Tewari"/>
+                <div class="pub-details">
+                    <p style="margin: 0;">
+                        <b><a href="https://ayushtewari.com/">Ayush Tewari</a></b><br/>
+                        <span style="opacity: 0.7; font-size: 0.9rem;">Assistant Professor</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aims-section">
+        <h2>Aims</h2>
+        <p>This course explores recent advances in computer vision, focusing on the foundational concepts that drive modern research. The aim is to equip students with both the theoretical grounding and practical intuition needed to understand cutting-edge research and begin contributing to novel research projects in the field.</p>
+    </section>
+
+    <section id="syllabus-section">
+        <h2>Syllabus</h2>
+        <table class="syllabus-table">
+            <thead>
+                <tr>
+                    <th style="width: 30%;">Session</th>
+                    <th style="width: 50%;">Reading Material</th>
+                    <th style="width: 20%;">Slides</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="section-header">
+                    <td colspan="3">Part I: Representation Learning and Generative Models (Ayush Tewari)</td>
+                </tr>
+                <tr>
+                    <td>Overview of Modern Computer Vision</td>
+                    <td>
+                        <a href="https://visionbook.mit.edu/taxonomy.html" target="_blank">1. Foundations of Computer Vision (Chapter 1)</a> <br/>
+                        <a href="https://arxiv.org/abs/2010.11929" target="_blank">2. An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</a><br/>
+                        <a href="https://arxiv.org/abs/2304.02643" target="_blank">3. Segment Anything</a>
+                    </td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>Unsupervised and Self-supervised Learning</td>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>Generative Models in Computer Vision</td>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+
+                <tr class="section-header">
+                    <td colspan="3">Part II: 3D Vision & Foundation Models (Elliott Wu)</td>
+                </tr>
+                <tr>
+                    <td>3D Computer Vision</td>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>Vision Foundation Models</td>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>Applications of Computer Vision</td>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Assessment</h2>
+        <table class="syllabus-table">
+            <thead>
+                <tr>
+                    <th style="width: 40%;">Coursework</th>
+                    <th style="width: 20%;">Weight</th>
+                    <th style="width: 20%;">Release</th>
+                    <th style="width: 20%;">Deadline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coursework 1: Representation Learning and Generative Models</td>
+                    <td>50%</td>
+                    <td>30 January 2026</td>
+                    <td>23 February 2026</td>
+                </tr>
+                <tr>
+                    <td>Coursework 2: 3D Vision</td>
+                    <td>50%</td>
+                    <td>[TBD]</td>
+                    <td>24 March 2026</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</article>
+{% endblock %}

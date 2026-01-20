@@ -1,0 +1,24 @@
+# --- Build Output ---
+# Eleventy default output folder
+_site/
+dist/
+
+# --- Dependencies ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- OS & IDE Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Environment & Logs ---
+.env
+*.log
+npm-debug.log*
+
+# --- Temporary/Cache ---
+.cache/
+.eslintcache
