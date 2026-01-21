@@ -2,25 +2,22 @@ name: Build Eleventy
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-22.04
-
     steps:
       - uses: actions/checkout@v2
-
-      - name: Install node.js
-        uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: "17"
-
-      - name: Install dependencies & build
-        run: |
+      - run: |
           npm install
           npm run build
       - name: Deploy
